@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+    <TITLE>The Colorado Experience</TITLE>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { display: flex; flex-direction: column; height: 100vh; }
+
+        #logo { height: 20%; width: 100%; }
+        #logo img { width: 100%; height: 100%; object-fit: fill; }
+
+        #main { display: flex; height: 80%; }
+
+        #navigation { width: 25%; height: 100%; }
+        #content { width: 75%; height: 100%; }
+
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</HEAD>
+<BODY>
+    <div id="logo">
+        <img src="images/LOGO.JPG">
+    </div>
+
+    <div id="main">
+        <div id="navigation">
+            <iframe src="link.html"></iframe>
+        </div>
+        <div id="content">
+            <iframe src="TCE.html" name="Content"></iframe>
+        </div>
+    </div>
+</BODY>
+</HTML>
