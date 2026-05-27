@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Contact</title>
+    </head>
+    <body>
+        <form name="contactForm" id="contactForm" action="result.html" method="GET">
+            <h2>Contact the editorial office</h2>
+            <p><label for="fullname">Full Name:</label></p>
+            <p><input type="text" id="fullname" name="fullname" required style="width: 100%;"></p>
+            
+            <div style="display: flex; gap: 24px;">
+                <div style="flex: 1;">
+                    <p><label for="email">Email:</label></p>
+                    <p><input type="email" id="email" name="email" required style="width: 100%;"></p>
+                </div>
+                <div style="flex: 1;">
+                    <p><label for="sendTo">Send to:</label></p>
+                    <select id="sendTo" name="sendTo" required size="5" style="width: 100%;">
+                        <option value="Editorial board">Editorial board</option>
+                        <option value="News Department">News Department</option>
+                        <option value="Board of Perspective">Board of Perspective</option>
+                        <option value="World Board">World Board</option>
+                        <option value="Business Department">Business Department</option>
+                    </select>
+                </div>
+            </div>
+            </p>
+            <p><label for="title">Subject:</label></p>
+            <p><input type="text" id="title" name="title" required style="width: 100%;"></p>
+            <p><label for="content">Content:</label></p>
+            <p><textarea id="content" name="content" required style="width: 100%; height: 100px;"></textarea></p>
+            <p>
+            <input type="submit" value="Send" style="background-color: #680c32; color: white;"
+                onclick="alert('Your message has been sent!');">
+            </p>
+        </form>
+    </body>
+</html>

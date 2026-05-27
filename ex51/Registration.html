@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <img src="Logo.gif" style="display: block; margin: 0 auto;">
+        <h1 style="text-align: center;">Newborn Registration</h1>
+    </head>
+    <body style="background-color: #21756e; color: white;">
+        <form id="regForm">
+            <table>
+                <tr>
+                    <td><label for="Date">Date</label></td>
+                    <td><input type="date" id="Date" name="Date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="firstName">1) Infant's First Name:</label></td>
+                    <td><input type="text" id="firstName" name="firstName" required></td>
+                    <td><label for="lastName">Last Name:</label></td>
+                    <td><input type="text" id="lastName" name="lastName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="MRec">2) Medical Record #:</label></td>
+                    <td><input type="text" id="MRec" name="MRec" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DoB">3) Date of Birth:</label></td>
+                    <td><input type="date" id="DoB" name="DoB" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Bweight">4) Birth Weight:</label></td>
+                    <td><input type="number" id="Bweight" name="Bweight" required></td>
+                </tr>
+                <tr>
+                    <td><label for="APGARScore">5) APGAR Score:</label></td>
+                    <td><input type="number" id="APGARScore" name="APGARScore" required></td>
+                </tr>
+                <tr>
+                    <td><label for="MFName">6) Mother's First Name:</label></td>
+                    <td><input type="text" id="MFName" name="MFName" required></td>
+                    <td><label for="MLName">Last:</label></td>
+                    <td><input type="text" id="MLName" name="MLName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="FFName">7) Father's First Name:</label></td>
+                    <td><input type="text" id="FFName" name="FFName" required></td>
+                    <td><label for="FLName">Last:</label></td>
+                    <td><input type="text" id="FLName" name="FLName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Physician">8) Physician (check all that apply):</label></td>
+                    <td>
+                        <select name="PhysicianSelect" id="PhysicianSelect" size="4" multiple required>
+                            <option value="Dr. Warren Albert">Dr. Warren Albert</option>
+                            <option value="Dr. Mariar Alvarez">Dr. Mariar Alvarez</option>
+                            <option value="Dr. Karen Brinkman">Dr. Karen Brinkman</option>
+                            <option value="Dr. Michael Kerry">Dr. Michael Kerry</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p style="text-align: center;">
+            <input type="submit" value="Register" form="regForm">
+            <input type="reset" value="Cancel" form="regForm" 
+                onclick="if (confirm('Are you sure you want to cancel the form?')) return true; else return false;">
+        </p>
+    </body>
+</html>

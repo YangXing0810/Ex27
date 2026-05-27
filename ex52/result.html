@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background: #f0f0f0;
+            }
+            .result-box {
+                max-width: 600px;
+                margin: 40px auto;
+                padding: 20px;
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            }
+            .result-box h1 {
+                font-size: 24px;
+                margin-bottom: 16px;
+                color: rgb(104, 12, 50);
+            }
+            .result-box p {
+                font-size: 16px;
+                margin: 8px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="result-box">
+            <h1>Message Sent Successfully!</h1>
+            <p>Full Name: <span id="fullnameValue"></span></p>
+            <p>Email: <span id="emailValue"></span></p>
+            <p>Send to: <span id="sendToValue"></span></p>
+            <p>Subject: <span id="titleValue"></span></p>
+            <p>Content: <span id="contentValue"></span></p>
+        </div>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('fullnameValue').textContent = params.get('fullname') || '';
+            document.getElementById('emailValue').textContent = params.get('email') || '';
+            document.getElementById('sendToValue').textContent = params.get('sendTo') || '';
+            document.getElementById('titleValue').textContent = params.get('title') || '';
+            document.getElementById('contentValue').textContent = params.get('content') || '';
+        </script>
+    </body>
+</html>
